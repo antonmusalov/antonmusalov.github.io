@@ -1,368 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Anton Musalov Portfolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Anton Musalov Portfolio</title>
+      <meta name="description" content="Portfolio Template for Developer" />
 
-    <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/jpeg/profile.jpg"
-              alt="Anton Musalov Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Anton Musalov</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet"
+      />
+      <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is Anton</h1>
-        <div class="home-hero__info">
-          <p class="text-primary">
-            This site showcases some of the work I have completed in my time as a Mechatronics Engineer in New Zealand
-          </p>
-        </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
-        </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/twitter-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/yt-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a
-            href="#"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
-          >
-            <img
-              src="./assets/png/insta-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
-    </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! It's
-                <strong>Anton Musalov</strong>
-                and I'm a <strong>Mechatronics Engineer</strong> located in
-                Canterbury, NZ. I've built an automated product testing station
-                using an embedded QR code system, developed a 3-axis spraying
-                robot for the USA market, and created a high accuracy cow
-                detection algorithm using SICK IR sensors. I'm also skilled in
-                HTML, CSS, JavaScript, React, SASS, GIT, Shopify, Wordpress,
-                Google Ads, Facebook Ads, Android, and iOS.
-              </p>
-              <p class="about__content-details-para">
-                I'm a bit of a digital product junky. Over the years, I've used
-                hundreds of web and mobile apps in different industries and
-                verticals. Feel free to <strong>contact</strong> me here.
-              </p>
-            </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">C++</div>
-              <div class="skills__skill">Robotics</div>
-              <div class="skills__skill">Embedded Systems</div>
-              <div class="skills__skill">Product Development</div>
-              <div class="skills__skill">Mechanical Design</div>
-              <div class="skills__skill">Electronics</div>
-              <div class="skills__skill">Machine Learning</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
-
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
+    </head>
+    <body>
+      <header class="header">
+        <div class="header__content">
+          <div class="header__logo-container">
+            <div class="header__logo-img-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Project 1 Screenshot"
-                class="projects__row-img"
-                loading="lazy"
+                src="./assets/jpeg/profile.jpg"
+                alt="Anton Musalov Logo Image"
+                class="header__logo-img"
               />
             </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Automated Product Testing Station</h3>
-              <p class="projects__row-content-desc">
-                A functional prototype of an automated product testing station using an embedded QR code system was developed.
-              </p>
-              <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
-            </div>
+            <span class="header__logo-sub">Anton Musalov</span>
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
+          <div class="header__main">
+            <ul class="header__links">
+              <li class="header__link-wrapper">
+                <a href="./index.html" class="header__link"> Home </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#about" class="header__link">About </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#projects" class="header__link">
+                  Projects
+                </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#contact" class="header__link"> Contact </a>
+              </li>
+            </ul>
+            <div class="header__main-ham-menu-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Project 2 Screenshot"
-                class="projects__row-img"
-                loading="lazy"
+                src="./assets/svg/ham-menu.svg"
+                alt="hamburger menu"
+                class="header__main-ham-menu"
               />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">3-Axis Spraying Robot</h3>
-              <p class="projects__row-content-desc">
-                Developed and tested a 3-axis spraying robot for the USA agricultural market, enabling precision spraying in large fields.
-              </p>
-              <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+              <img
+                src="./assets/svg/ham-menu-close.svg"
+                alt="hamburger menu close"
+                class="header__main-ham-menu-close d-none"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
-        <div class="contact__form-container">
-          <form action="#" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
+        <div class="header__sm-menu">
+          <div class="header__sm-menu-content">
+            <ul class="header__sm-menu-links">
+              <li class="header__sm-menu-link">
+                <a href="./index.html"> Home </a>
+              </li>
+
+              <li class="header__sm-menu-link">
+                <a href="./index.html#about"> About </a>
+              </li>
+
+              <li class="header__sm-menu-link">
+                <a href="./index.html#projects"> Projects </a>
+              </li>
+
+              <li class="header__sm-menu-link">
+                <a href="./index.html#contact"> Contact </a>
+              </li>
+            </ul>
           </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Anton Musalov</h4>
-            <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+        </div>
+      </header>
+      <section class="home-hero">
+        <div class="home-hero__content">
+          <h1 class="heading-primary">Hey, My name is Anton</h1>
+          <div class="home-hero__info">
+            <p class="text-primary">
+              This site showcases some of the work I have completed in my time as a Mechatronics Engineer in New Zealand
             </p>
           </div>
+          <div class="home-hero__cta">
+            <a href="./#projects" class="btn btn--bg">Projects</a>
+          </div>
         </div>
-
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Template Designed by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Rammahe Shwari</a
-          >
+        <div class="home-hero__socials">
+          <div class="home-hero__social">
+            <a href="https://www.linkedin.com/in/anton-musalov-43674689/" class="home-hero__social-icon-link">
+              <img
+                src="./assets/png/linkedin-ico.png"
+                alt="icon"
+                class="home-hero__social-icon"
+              />
+            </a>
+          </div>
+          <div class="home-hero__social">
+            <a
+              href="https://www.instagram.com/antonmusalov/"
+              class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+            >
+              <img
+                src="./assets/png/insta-ico.png"
+                alt="icon"
+                class="home-hero__social-icon"
+              />
+            </a>
+          </div>
         </div>
-      </div>
-    </footer>
+        <div class="home-hero__mouse-scroll-cont">
+          <div class="mouse"></div>
+        </div>
+      </section>
+      <section id="about" class="about sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main">About Me</span>
+            <span class="heading-sec__sub">
+              I am a 23 year old Engineer who has a passion for automation and enjoys spending time surfing and biking.
+            </span>
+          </h2>
+          <div class="about__content">
+            <div class="about__content-main">
+              <h3 class="about__content-title">Get to know me!</h3>
+              <div class="about__content-details">
+                <p class="about__content-details-para">
+                  Hey! It's
+                  <strong>Anton Musalov</strong>
+                  and I'm a <strong>Mechatronics Engineer</strong> located in
+                  Canterbury, NZ. I've built an automated product testing station
+                  using an embedded QR code system, developed a 3-axis spraying
+                  robot for the USA market, and created a high accuracy cow
+                  detection algorithm using SICK IR sensors. I'm also skilled in
+                  HTML, CSS, JavaScript, React, SASS, GIT, Shopify, Wordpress,
+                  Google Ads, Facebook Ads, Android, and iOS.
+                </p>
+                <p class="about__content-details-para">
+                  I have worked on a range of different software, electrical and mechanical projects. I am looking to develop my career in
+                  automation and robotics. Feel free to <strong>contact</strong> me here.
+                </p>
+              </div>
+              <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+                >Contact</a
+              >
+            </div>
+            <div class="about__content-skills">
+              <h3 class="about__content-title">My Skills</h3>
+              <div class="skills">
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">C++</div>
+                <div class="skills__skill">Robotics</div>
+                <div class="skills__skill">Embedded Systems</div>
+                <div class="skills__skill">Product Development</div>
+                <div class="skills__skill">Mechanical Design</div>
+                <div class="skills__skill">Electronics</div>
+                <div class="skills__skill">Machine Learning</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Projects</span>
+            <span class="heading-sec__sub">
+              Have a look at some of my favourite projects from the past.
+              I have hidden the details of some designs to protect IP.
+            </span>
+          </h2>
 
-    <script src="./index.js"></script>
-  </body>
+          <div class="projects__content">
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <iframe src="https://myhub.autodesk360.com/ue2c114d7/shares/public/SHd38bfQT1fb47330c99f20fb317acfe5027?mode=embed" 
+                width="640" 
+                height="480" 
+                allowfullscreen="true" 
+                webkitallowfullscreen="true" 
+                mozallowfullscreen="true"  
+                frameborder="0"></iframe>              
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Automated Product Testing Station</h3>
+                <p class="projects__row-content-desc">
+                  A functional prototype of an automated product testing station using an embedded QR code system was developed.
+                </p>
+                <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+              </div>
+            </div>
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <div class="projects__row-img-cont">
+                  <iframe src="https://myhub.autodesk360.com/ue2c114d7/shares/public/SHd38bfQT1fb47330c99f20fb317acfe5027?mode=embed" 
+                  width="640" 
+                  height="480" 
+                  allowfullscreen="true" 
+                  webkitallowfullscreen="true" 
+                  mozallowfullscreen="true"  
+                  frameborder="0"></iframe>              
+                </div>
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">3-Axis Spraying Robot</h3>
+                <p class="projects__row-content-desc">
+                  Developed and tested a 3-axis spraying robot for the USA agricultural market, enabling precision spraying in large fields.
+                </p>
+                <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact sec-pad dynamicBg">
+        <div class="main-container">
+            <h2 class="heading heading-sec">
+                <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+                <span class="heading-sec__sub heading-sec__sub--lt">
+                    Please get in contact if you would like 
+                    to hear more about my projects or if you 
+                    would like to work on something together.
+                </span>
+            </h2>
+            <p class="heading-sec__sub heading-sec__sub--lt">
+                Mobile: <a href="tel:+64278630800">+64 27 863 0800</a>
+            </p>
+            <p class="heading-sec__sub heading-sec__sub--lt">
+                Email: <a href="mailto:anton.musalov@gmail.com">anton.musalov@gmail.com</a>
+            </p>
+          <div class="contact__form-container">
+            <form action="https://formspree.io/f/xwkdvbno" 
+                  method="POST"
+                  class="contact__form">
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="name">Name</label>
+                <input
+                  required
+                  placeholder="Enter Your Name"
+                  type="text"
+                  class="contact__form-input"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="email">Email</label>
+                <input
+                  required
+                  placeholder="Enter Your Email"
+                  type="text"
+                  class="contact__form-input"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="message">Message</label>
+                <textarea
+                  required
+                  cols="30"
+                  rows="10"
+                  class="contact__form-input"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  id="message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--theme">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="main-footer">
+        <div class="main-container">
+          <div class="main-footer__upper">
+            <div class="main-footer__row main-footer__row-1">
+              <h2 class="heading heading-sm main-footer__heading-sm">
+                <span>Social</span>
+              </h2>
+              <div class="main-footer__social-cont">
+                <a target="_blank" rel="noreferrer" href="#">
+                  <img
+                    class="main-footer__icon"
+                    src="./assets/png/linkedin-ico.png"
+                    alt="icon"
+                  />
+                </a>
+                <a target="_blank" rel="noreferrer" href="#">
+                  <img
+                    class="main-footer__icon main-footer__icon--mr-none"
+                    src="./assets/png/insta-ico.png"
+                    alt="icon"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="main-footer__row main-footer__row-2">
+              <h4 class="heading heading-sm text-lt">Anton Musalov</h4>
+              <p class="main-footer__short-desc">
+                An eager and proffesional individual who has a passion for automation.
+                Looking for an exciting role in robotics and automation where I can
+                leverage my knowledge and people skills to make cool things.
+              </p>
+            </div>
+          </div>
+
+          <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+          <div class="main-footer__lower">
+            &copy; Copyright 2023. Template Designed by
+            <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+              >Rammahe Shwari</a
+            >
+          </div>
+        </div>
+      </footer>
+
+      <script src="./index.js"></script>
+    </body>
+  </div>
 </html>
+
