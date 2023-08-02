@@ -62,6 +62,8 @@ button {
 textarea {
   resize: none; }
 
+
+
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
@@ -291,7 +293,9 @@ textarea {
   .projects__row:last-child {
     margin-bottom: 0; }
   .projects__row-img-cont {
-    overflow: visible; }
+    overflow: visible;
+    justify-content: center;
+    align-items: center; }
   .projects__row-img {
     width: 100%;
     display: block;
