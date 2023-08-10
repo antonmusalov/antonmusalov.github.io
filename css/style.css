@@ -42,15 +42,46 @@ body {
   overflow-y: scroll;
   font-family: 'Source Sans Pro', sans-serif; }
 
-/* object {
-    display: block;
-    max-width: 90%;
-    max-height: 100%;
-    margin: 0;
-    padding: 0;
-    transform-origin: 0 0;
-    object-fit: contain;
-} */
+.project-details__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.project-details__gallery figure {
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project-details__gallery img {
+  width: 100%;
+  transition: transform 0.25s ease;
+}
+
+.project-details__gallery figure:active img {
+  transform: scale(1.2);
+}
+
+.project-details__gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.project-details__gallery figure:hover figcaption,
+.project-details__gallery figure:active figcaption {
+  opacity: 1;
+}
+  
 a {
   text-decoration: none;
   color: inherit; }
@@ -70,6 +101,60 @@ button {
 
 textarea {
   resize: none; }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    height: 100%;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__img-wrapper {
+  width: 90%;  /* Adjust as needed */
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel__img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
+#carousel__prev {
+  left: 10px;  /* Adjust as needed */
+}
+
+#carousel__next {
+  right: 10px;  /* Adjust as needed */
+}
+
+.carousel__btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
 
 
 
@@ -710,24 +795,101 @@ textarea {
     -webkit-animation: wheel 1.3s infinite; }
 
 
-     /* .iframe-container {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625)} */
-  
-  
-  /* .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-  } */
-   
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 40%;
+  position: relative;
+  align-items: center;
+  margin-top: 50px; /* This will add space above the slideshow */
+  height: 500px; /* Example height - adjust as needed */
+  overflow: hidden; /* Hide overflowing parts of the image */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide the images by default */
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will crop the image to cover the container without stretching */
+  object-position: center; /* Adjust the positioning of the image if it's bigger than the container */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 @keyframes wheel {
   to {
