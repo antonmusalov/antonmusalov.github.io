@@ -38,7 +38,39 @@ headerLogoConatiner.addEventListener('click', () => {
 })
 
 
+let slideIndices = {};
 
+function plusSlides(n, Id) {
+  if (!slideIndices[Id]) {
+    slideIndices[Id] = 1;
+  }
+  showSlides(slideIndices[Id] += n, Id);
+}
 
+function currentSlide(n, Id) {
+  showSlides(slideIndices[Id] = n, Id);
+}
 
+function showSlides(n, Id) {
+  let i;
+  let slides = document.querySelectorAll(`.slideshow-container[data-id='${Id}'] .mySlides`);
+
+  if (n > slides.length) { slideIndices[Id] = 1; }
+  if (n < 1) { slideIndices[Id] = slides.length; }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndices[Id]-1].style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const targetIds = ['1', '2', '3'];  // specify the target data-id values
+  targetIds.forEach(Id => {
+    console.log("Initializing slideshow with ID:", Id); // Log to see which IDs are being processed
+    slideIndices[Id] = 1;
+    showSlides(1, Id);
+  });
+});
 
