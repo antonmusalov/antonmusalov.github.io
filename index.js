@@ -66,7 +66,7 @@ function showSlides(n, Id) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  const targetIds = ['1', '2', '3'];  // specify the target data-id values
+  const targetIds = ['1', '2', '3','4'];  // specify the target data-id values
   targetIds.forEach(Id => {
     console.log("Initializing slideshow with ID:", Id); // Log to see which IDs are being processed
     slideIndices[Id] = 1;
