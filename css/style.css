@@ -884,6 +884,21 @@ textarea {
   overflow: hidden; /* This ensures that any part of the image outside this container is hidden (cropped) */
 }
 
+.slide-image {
+  width: 100%; /* Fills the width of the parent container */
+  height: 100%; /* Fills the height of the parent container */
+  object-fit: cover; /* Image will cover the entire parent but will maintain aspect ratio */
+}
+ 
+.slide-image-contain{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
